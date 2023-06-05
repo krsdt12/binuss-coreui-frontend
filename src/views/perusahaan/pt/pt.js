@@ -20,6 +20,7 @@ import {
   AiOutlineEdit 
 } from "react-icons/ai"
 import CIcon from '@coreui/icons-react'
+import { cilPlus } from '@coreui/icons'
 
 const pt = () => {
   return (
@@ -30,6 +31,13 @@ const pt = () => {
             <strong>Data PT</strong>
           </CCardHeader>
           <CCardBody>
+            <CCol xs={8}></CCol>
+            <CCol xs={4} className="align-middle">
+              <CButton color="primary" >
+                <CIcon icon={cilPlus} height={20}  className="align-middle" />
+                <span> Tambah Data</span>
+              </CButton>
+            </CCol>
             <CTable>
               <CTableHead>
                 <CTableRow>
@@ -38,11 +46,11 @@ const pt = () => {
                   <CTableHeaderCell scope="col">Nama PT</CTableHeaderCell>
                   <CTableHeaderCell scope="col">Alamat</CTableHeaderCell>
                   <CTableHeaderCell scope="col">No. Telpon</CTableHeaderCell>
-                  <CTableHeaderCell scope="col">Action</CTableHeaderCell>
+                  <CTableHeaderCell scope="col" colSpan={2}>Action</CTableHeaderCell>
                 </CTableRow>
               </CTableHead>
               <CTableBody>
-                <CTableRow>
+                <CTableRow className="align-middle">
                   <CTableHeaderCell scope="row">1</CTableHeaderCell>
                   <CTableDataCell><CImage src={logo} alt="logo" height={50} /></CTableDataCell>
                   <CTableDataCell>PT. BINA UTAMA SEJAHTERA SEJATI</CTableDataCell>
