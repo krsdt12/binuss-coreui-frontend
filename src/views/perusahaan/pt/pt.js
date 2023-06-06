@@ -31,7 +31,7 @@ const pt = () => {
           <CCardBody>
             <CRow>
               <CCol align="right">
-                <CButton color="primary">
+                <CButton color="primary" href="/pt/add">
                   <CRow>
                     <CCol lg={3} md={3}>
                       <CIcon
