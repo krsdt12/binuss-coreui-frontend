@@ -61,8 +61,8 @@ const AddPT = () => {
                 validated={validated}
                 onSubmit={handleSubmit}
               >
-                <CRow className="mb-4">
-                  <CCol xs={12}>
+                <CRow>
+                  <CCol xs={12} className="mb-4">
                     <CFormLabel htmlFor="inputNamaPT">Nama PT</CFormLabel>
                     <CFormInput
                       id="inputNamaPT"
@@ -75,9 +75,9 @@ const AddPT = () => {
                   </CCol>
                 </CRow>
                 <CRow>
-                  <CCol md={6}>
+                  <CCol lg={6}>
                     <CRow>
-                      <CCol>
+                      <CCol className="mb-4">
                         <CFormLabel htmlFor="inputAlamatPT">
                           Alamat Lengkap
                         </CFormLabel>
@@ -93,9 +93,9 @@ const AddPT = () => {
                       </CCol>
                     </CRow>
                   </CCol>
-                  <CCol md={6}>
-                    <CRow className="mb-4">
-                      <CCol>
+                  <CCol lg={6}>
+                    <CRow>
+                      <CCol className="mb-4">
                         <CFormLabel htmlFor="inputEmailPT">Email</CFormLabel>
                         <CFormInput
                           id="inputEmailPT"
@@ -109,7 +109,7 @@ const AddPT = () => {
                       </CCol>
                     </CRow>
 
-                    <CRow className="mb-4">
+                    <CRow>
                       <CFormLabel htmlFor="inputNoTelpPT">
                         No. Telpon
                       </CFormLabel>
@@ -123,8 +123,8 @@ const AddPT = () => {
                     </CRow>
                   </CCol>
                 </CRow>
-                <CRow className="mb-4">
-                  <CCol md={6}>
+                <CRow>
+                  <CCol md={6} className="mb-4">
                     <CFormLabel htmlFor="inputKotaPT">Kota</CFormLabel>
                     <CFormInput
                       id="inputKotaPT"
@@ -135,24 +135,24 @@ const AddPT = () => {
                       Harap masukkan Kota dengan benar!
                     </CFormFeedback>
                   </CCol>
-                  <CCol md={6}>
+                  <CCol md={6} className="mb-4">
                     <CFormLabel htmlFor="inputNPWPPT">NPWP PT</CFormLabel>
                     <CFormInput id="inputNPWPPT" required />
                   </CCol>
                 </CRow>
-                <CRow class="h-100" className="mb-4">
-                  <CCol md={6}>
+                <CRow class="h-100">
+                  <CCol md={6} className="mb-4">
                     <CFormLabel htmlFor="inputLogoPT">Logo PT</CFormLabel>
                     <CFormInput
                       type="file"
                       id="inputLogoPT"
                       placeholder="Upload Logo PT"
                       onChange={handleChange}
-                      accept="image/*"
+                      accept="image/jpg, image/jpeg, image/png"
                       required
                     />
                   </CCol>
-                  <CCol md={6} align="center">
+                  <CCol md={6} align="center" className="mb-4">
                     <CFormFeedback invalid>
                       Harap masukkan Logo PT dengan benar!
                     </CFormFeedback>
