@@ -12,18 +12,17 @@ import logo from "../../../assets/images/Logo/Binuss-logo.jpg";
 
 const ViewPT = () => {
   return (
-    <CContainer>
+    <CContainer lg>
       <CCard>
-        <CCardHeader>
-          <strong>PT. ABC</strong>
-        </CCardHeader>
         <CCardBody>
-          <CRow>
+          <CRow className="pt-2">
             <CCol lg={4} className="px-5 mb-5">
               <CImage src={logo} thumbnail />
             </CCol>
-            <CCol className="mx-5">
-              <CRow>
+            <CCol className="me-5">
+              <h2>PT BINUSS</h2>
+              <hr />
+              {/* <CRow>
                 <CCol xs={4}>Nama PT</CCol>
                 <CCol xs="auto">:</CCol>
                 <CCol>PT. ABC</CCol>
@@ -55,7 +54,7 @@ const ViewPT = () => {
                 <CCol xs={4}>NPWP</CCol>
                 <CCol xs="auto">:</CCol>
                 <CCol>9452661770001</CCol>
-              </CRow>
+              </CRow> */}
             </CCol>
           </CRow>
         </CCardBody>

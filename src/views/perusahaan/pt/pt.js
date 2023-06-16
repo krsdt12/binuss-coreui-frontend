@@ -72,7 +72,7 @@ const pt = () => {
                   <CTableDataCell>Boyolali</CTableDataCell>
                   <CTableDataCell>08916627772</CTableDataCell>
                   <CTableDataCell width={50}>
-                    <CButton color="info" variant="ghost">
+                    <CButton color="info" variant="ghost" href="/pt/view">
                       <AiOutlineEye />
                     </CButton>
                   </CTableDataCell>

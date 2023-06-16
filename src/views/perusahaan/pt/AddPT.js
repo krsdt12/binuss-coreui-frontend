@@ -35,7 +35,7 @@ const AddPT = () => {
   function handleChange(e) {
     const gambar = e.target.files;
     // if (gambar.name.match(/\.(jpg|jpeg|png|gif)$/)) {
-    setFile(URL.createObjectURL(e.target.files[0]));
+    setFile(URL.createObjectURL(gambar[0]));
     // } else {
     //   alert("Hanya menerima file berupa gambar!");
     //   setFile(null);
