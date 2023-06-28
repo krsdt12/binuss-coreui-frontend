@@ -24,7 +24,7 @@ const ViewPT = () => {
       <CRow>
         <CCol lg={8} className="mb-3">
           <CCard>
-            <CCardHeader>
+            <CCardHeader style={{ height: 55 }}>
               <CRow>
                 <CCol sm={9} className="align-self-center">
                   <span>
@@ -65,7 +65,24 @@ const ViewPT = () => {
         </CCol>
         <CCol lg={4} className="mb-3">
           <CCard>
-            <CCardBody></CCardBody>
+            <CCardHeader style={{ height: 55 }}>
+              <CRow>
+                <CCol sm={9} className="align-self-center">
+                  <span>
+                    <b>Lokasi Pada Peta</b>
+                  </span>
+                </CCol>
+              </CRow>
+            </CCardHeader>
+            <CCardBody>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1330545367246!2d110.6182422759739!3d-7.560468574663712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6bfc5e338b7d%3A0xd807cb17d5d9064!2sPT.%20BINA%20UTAMA%20SEJAHTERA%20SEJATI!5e0!3m2!1sid!2sid!4v1687933680118!5m2!1sid!2sid"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                title="mapPT"
+              ></iframe>
+            </CCardBody>
           </CCard>
         </CCol>
       </CRow>
@@ -101,6 +118,7 @@ const ViewPT = () => {
               </CRow>
               <CRow>
                 <CCol xs={2}>No. Telpon</CCol>
+
                 <CCol xs="auto">:</CCol>
                 <CCol>0854887555</CCol>
               </CRow>
